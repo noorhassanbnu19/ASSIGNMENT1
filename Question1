@@ -1,0 +1,47 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+int main() {
+    // Taking numbers input
+    float number1,number2,sum,difference , product,quotient ;
+    cout<<"enter the first number : " <<endl;
+    cin>> number1 ;
+    cout<<"enter the second number : " <<endl;
+    cin>> number2 ;
+    // applying all the arithmetic operations
+    sum = number1 + number2;
+    difference = number1 - number2 ;
+    product = number1 * number2;
+    quotient = number2/number1;
+   
+    //display of all as a float or decimal number with more precision   
+    cout<<"The sum is: "<< fixed<<setprecision(3)<<sum <<endl;
+    cout<<"The difference is :"<<fixed<<setprecision(3)<<difference<<endl;
+    cout<<"The product is :"<<fixed<<setprecision(3)<<product<<endl;
+    cout<<"The quotient is :"<< fixed<<setprecision(3)<<quotient<<endl;
+   // typecasating the number already taken 
+    int num1 = int(number1);
+    int num2 = int(number2);
+   
+    
+    int isum = int(sum);
+    int idifference = int(difference);
+    int iquotient = int(quotient);
+    int iproduct = int(product);
+   
+    isum = num1 + num2;
+    idifference = num1 - num2 ;
+    iproduct = num1 * num2;
+    iquotient = num1/num2;
+   
+   
+   //displaying the the integer form of all the calculate value
+   // These values will be less acurate and less precise than the previous ones
+    cout<<"The sum as an integer : "<<isum<<endl;
+    cout<<"The difference as an integer : "<<idifference<<endl;
+    cout<<"The product as an integer :  "<<iproduct<<endl;
+    cout<<"The quotient as an integer : "<<iquotient<<endl;
+   
+   
+    return 0;
+}
