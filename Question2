@@ -1,0 +1,94 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+#include <iomanip>   // for setw()
+using namespace std;
+#include <string> 
+int main() {
+    int mark1,mark2,mark3,mark4,mark5;
+    string sub1,sub2,sub3,sub4,sub5;
+    cout<<"enter the subject name:" <<endl;
+    cin >> sub1 ;
+    cout<<"enter the marks "<<endl;
+    cin >> mark1;
+    if (mark1 < 0 || mark1 > 100) {
+        cout << "Invalid marks entered! Marks should be between 0 and 100." << endl;
+        return 0;
+    }
+
+    cout<<"enter the subject name:" <<endl;
+    cin >> sub2 ;
+    cout<<"enter the marks "<<endl;
+    cin >> mark2;
+    if (mark2 < 0 || mark2 > 100) {
+        cout << "Invalid marks entered! Marks should be between 0 and 100." << endl;
+        return 0;
+    }
+
+    cout<<"enter the subject name:" <<endl;
+    cin >> sub3 ;
+    cout<<"enter the marks "<<endl;
+    cin >> mark3;
+    if (mark3 < 0 || mark3 > 100) {
+        cout << "Invalid marks entered! Marks should be between 0 and 100." << endl;
+        return 0;
+    }
+
+    cout<<"enter the subject name:"<<endl ;
+    cin >> sub4 ;
+    cout<<"enter the marks "<<endl;
+    cin >> mark4;
+    if (mark4 < 0 || mark4 > 100) {
+        cout << "Invalid marks entered! Marks should be between 0 and 100." << endl;
+        return 0;
+    }
+
+    cout<<"enter the subject name:" <<endl;
+    cin >> sub5 ;
+    cout<<"enter the marks "<<endl;
+    cin >> mark5;
+    if (mark5 < 0 || mark5 > 100) {
+        cout << "Invalid marks entered! Marks should be between 0 and 100." << endl;
+        return 0;
+    }
+
+    
+    int totalObtained = mark1 + mark2 + mark3 + mark4 + mark5;
+    int totalMarks = 500;
+    float percentage = (totalObtained / 500.0) * 100;
+
+    
+    
+
+    cout<<left<<setw(20)<<"------------------------"<<endl;
+    cout<<left<<setw(10)<<"Subjects"<<right<<setw(10)<<"marks"<<endl;
+    cout<<left<<setw(20)<<"------------------------"<<endl;
+    cout << left << setw(15) << sub1 << right << setw(15) <<mark1 << endl;
+    cout << left << setw(15) << sub2 << right << setw(15) <<mark2 << endl;
+    cout << left << setw(15) << sub3 << right << setw(15) <<mark3 << endl;
+    cout << left << setw(15) << sub4 << right << setw(15) << mark4 << endl;
+    cout << left << setw(15) << sub5 << right << setw(15) <<mark5 << endl;
+    
+    string grade;
+    if (percentage >= 90)
+        grade = "A+";
+    else if (percentage >= 80)
+        grade = "A";
+    else if (percentage >= 70)
+        grade = "B";
+    else if (percentage >= 60)
+        grade = "C";
+    else if (percentage >= 50)
+        grade = "D";
+    else
+        grade = "F";
+
+
+    cout << "------------------------" << endl;
+    cout << left << setw(10) << "Total" << right << setw(10) << totalObtained << endl;
+    cout << left << setw(10) << "Out of" << right << setw(10) << totalMarks << endl;
+    cout << left << setw(10) << "Percent" << right << setw(9) << fixed << setprecision(1) << percentage << "%" << endl;
+    cout << left << setw(10) << "Grade" << right << setw(10) << grade << endl;
+
+
+    return 0;
+}
