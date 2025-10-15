@@ -1,0 +1,48 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b, c;
+
+    cout << "Enter number1: ";
+    cin >> a;
+    cout << "Enter number2: ";
+    cin >> b;
+    cout << "Enter number3: ";
+    cin >> c;
+    
+    // check if thery are equal 
+    if (a == b && b == c) {
+        cout << "All numbers are equal." << endl;
+    }
+//making seperate variables for comparison 
+    else {
+        int largest;
+        int smallest;
+
+        if (a > b && a > c) {
+            largest = a;
+        }
+        else if (b > a && b > c) {
+            largest = b;
+        }
+        else {
+            largest = c;
+        }
+
+        if (a < b && a < c) {
+            smallest = a;
+        }
+        else if (b < a && b < c) {
+            smallest = b;
+        }
+        else {
+            smallest = c;
+        }
+
+        cout << "Largest number is: " << largest << endl;
+        cout << "Smallest number is: " << smallest << endl;
+    }
+
+    return 0;
+}
