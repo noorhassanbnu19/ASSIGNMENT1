@@ -59,9 +59,9 @@ int main() {
     
     
 
-    cout<<left<<setw(20)<<"------------------------"<<endl;
-    cout<<left<<setw(10)<<"Subjects"<<right<<setw(10)<<"marks"<<endl;
-    cout<<left<<setw(20)<<"------------------------"<<endl;
+    cout<<left<<setw(20)<<"--------------------------------"<<endl;
+    cout<<left<<setw(15)<<"Subjects"<<right<<setw(15)<<"marks"<<endl;
+    cout<<left<<setw(20)<<"--------------------------------"<<endl;
     cout << left << setw(15) << sub1 << right << setw(15) <<mark1 << endl;
     cout << left << setw(15) << sub2 << right << setw(15) <<mark2 << endl;
     cout << left << setw(15) << sub3 << right << setw(15) <<mark3 << endl;
@@ -83,7 +83,7 @@ int main() {
         grade = "F";
 
 
-    cout << "------------------------" << endl;
+    cout << "--------------------------------" << endl;
     cout << left << setw(10) << "Total" << right << setw(10) << totalObtained << endl;
     cout << left << setw(10) << "Out of" << right << setw(10) << totalMarks << endl;
     cout << left << setw(10) << "Percent" << right << setw(9) << fixed << setprecision(1) << percentage << "%" << endl;
